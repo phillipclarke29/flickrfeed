@@ -5,43 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0"/>
   <title>Flickr Public Feed</title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic"/>
-</head>
-  <body ng-controller="flickrfeedSearchController as searchCtrl" layout="column" layout-align="top-center">
-    <md-toolbar>
-      <div class="md-toolbar-tools">
-        <span class="md-flex">Flickr Public Feed</span>
-      </div>
-    </md-toolbar>
-    <md-content layout="column" layout-align="center center">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>  <link rel="stylesheet" href="style.css"/>
+  <script src='bower_components/angular/angular.min.js'></script>
+  <script src='bower_components/angular-aria/angular-aria.min.js'></script>
+  <script src='bower_components/angular-animate/angular-animate.min.js'></script>
+  <script src='bower_components/hammerjs/hammer.min.js'></script>
+  <script src='bower_components/angular-material/angular-material.min.js'></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src='js/app.js'></script>
+  <script src="js/flickrfeedSearchController.js"></script>
+<body>
+<div>
+  <form class="form-horizontal">
+    <input type="text" >
+    <button class="btn">Search</button>
+  </form>
+  <ul class="list-group">
+    <li class="list-group-item">
+      
+      <a href="https://api.flickr.com/services/feeds/photos_public.gne?tags=potato&tagmode=all&format=json"></a>
+    </li>
 
-      <div class="app-content">
-        <form ng-submit="search()">
-          <md-input-container>
-            <label>Search</label>
-            <input type="text" ng-model="searchTerm" ng-submit="search();">
-          </md-input-container>
-        </form>
-
-        <md-card>
-          <h2> Image Title </h2>
-          <h3> Photo Author </h3>
-          <img src="http://placehold.it/140x100" alt="" class="md-card-image"/>
-        </md-card>
-
-      </div>
-    </md-content>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src='bower_components/angular/angular.min.js'></script>
-    <script src='bower_components/angular-aria/angular-aria.min.js'></script>
-    <script src='bower_components/angular-animate/angular-animate.min.js'></script>
-    <script src='bower_components/hammerjs/hammer.min.js'></script>
-    <script src='bower_components/angular-material/angular-material.min.js'></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src='js/app.js'></script>
-    <script src="js/flickrfeedSearchController.js"></script>
+    </li>
+  </ul>
+</div>
+</body>
   </body>
 
   </html>

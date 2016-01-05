@@ -1,0 +1,25 @@
+{
+  "name": "flickrfeed",
+  "homepage": "https://github.com/phillipclarke29/PotFEDevTest",
+  "authors": [
+    "philip <philip.clarke@redhood.co.uk>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-material": "~1.0.1",
+    "angular-animate": "~1.4.8",
+    "angular-aria": "~1.4.8",
+    "hammerjs": "hammer.js#~2.0.6"
+  }
+}

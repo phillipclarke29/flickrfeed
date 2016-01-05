@@ -1,0 +1,12 @@
+.app-content {
+  width:75%
+}
+form {
+  padding: 10px 30px 20px 25px;
+}
+
+md-input-container label {
+    position: relative;
+    top: -2px;
+    font-weight: bold;
+}

@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head lang="en">
+<head lang="en" ng-app="flickrSearch">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0"/>
   <title>Flickr Public Feed</title>
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic"/>
 </head>
-  <body ng-app="flickrFeed" ng-controller="ListController" layout="column" layout-align="top-center">
+  <body ng-controller="flickrfeedSearchController as searchCtrl" layout="column" layout-align="top-center">
     <md-toolbar>
       <div class="md-toolbar-tools">
         <span class="md-flex">Flickr Public Feed</span>
@@ -33,12 +33,15 @@
 
       </div>
     </md-content>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src='bower_components/angular/angular.min.js'></script>
     <script src='bower_components/angular-aria/angular-aria.min.js'></script>
     <script src='bower_components/angular-animate/angular-animate.min.js'></script>
     <script src='bower_components/hammerjs/hammer.min.js'></script>
     <script src='bower_components/angular-material/angular-material.min.js'></script>
-    <script src='app.js'></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src='js/app.js'></script>
+    <script src="js/flickrfeedSearchController.js"></script>
   </body>
 
   </html>

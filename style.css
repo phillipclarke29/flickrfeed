@@ -10,3 +10,11 @@ md-input-container label {
     top: -2px;
     font-weight: bold;
 }
+
+md-card {
+  padding: 10px 30px 25px 20px;
+
+}
+md-card>img {
+    width: 30%;
+}

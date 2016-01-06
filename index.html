@@ -31,8 +31,7 @@
         </form>
 
         <md-card ng-repeat="picture in results.photos.photo">
-          <h2> Image Title </h2>
-          <h3> Photo Author </h3>
+          <h3> {{picture.author}} </h3>
           <h4> {{picture.title}} </h4>
           <img ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_b.jpg alt="" class="md-card-image"/>
         </md-card>

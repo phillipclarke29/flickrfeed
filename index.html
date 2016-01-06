@@ -22,13 +22,17 @@
           <md-input-container>
             <label>Search</label>
             <input type="text" ng-model="searchTerm" ng-submit="search();">
+            <md-progress-circular md-theme="blue" md-mode="indeterminate"><md-progress-circular>
           </md-input-container>
+          <div class='progress'>
+          </div>
         </form>
 
-        <md-card>
+        <md-card ng-repeat="picture in results.photos.photo">
           <h2> Image Title </h2>
           <h3> Photo Author </h3>
-          <img src="http://placehold.it/140x100" alt="" class="md-card-image"/>
+          <h4> {{picture.title}} </h4>
+          <img ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_b.jpg alt="" class="md-card-image"/>
         </md-card>
 
       </div>

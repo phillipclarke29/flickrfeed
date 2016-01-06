@@ -6,8 +6,11 @@ angular.module('flickrFeed', ['ngMaterial'])
 
     $scope.results = [];
 
+    $scope.isSearching = false;
+
     $scope.search = function(){
 
+    $scope.isSearching = true;
       $http({
         method: 'GET',
         url: 'https://api.flickr.com/services/rest',
@@ -20,9 +23,11 @@ angular.module('flickrFeed', ['ngMaterial'])
         }
       }).success(function (data){
         $scope.results = data;
+        $scope.isSearching = false;
           console.log(data);
       }).error(function(error) {
         console.log(error);
+        $scope.isSearching = false;
       });
 
     };

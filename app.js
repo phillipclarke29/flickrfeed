@@ -12,14 +12,11 @@ angular.module('flickrFeed', ['ngMaterial'])
 
     $scope.isSearching = true;
       $http({
-        method: 'GET',
-        url: 'https://api.flickr.com/services/rest',
+        url: 'https://api.flickr.com/services/feeds/photos_public.gne?&callback=?',
         params: {
-          method: 'flickr.photos.search',
           api_key: '0d9a81629077f3ee2cdefcdc91d09826',
-          text: $scope.searchTerm,
+          tags: $scope.searchTerm,
           format: 'json',
-          nojsoncallback: 1
         }
       }).success(function (data){
         $scope.results = data;

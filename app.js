@@ -6,25 +6,26 @@ angular.module('flickrFeed', ['ngMaterial'])
 
     $scope.results = [];
 
-    $scope.isSearching = false;
+    $scope.isSearching= false;
 
     $scope.search = function(){
 
-    $scope.isSearching = true;
+
       $http({
-        url: 'https://api.flickr.com/services/feeds/photos_public.gne?&callback=?',
+        method: 'GET',
+        url: 'https://api.flickr.com/services/rest',
         params: {
+          method: 'flickr.photos.search',
           api_key: '0d9a81629077f3ee2cdefcdc91d09826',
-          tags: $scope.searchTerm,
+          text: $scope.searchTerm,
           format: 'json',
+          nojsoncallback: 1
         }
       }).success(function (data){
         $scope.results = data;
-        $scope.isSearching = false;
           console.log(data);
       }).error(function(error) {
         console.log(error);
-        $scope.isSearching = false;
       });
 
     };

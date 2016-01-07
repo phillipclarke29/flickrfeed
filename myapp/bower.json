@@ -1,0 +1,25 @@
+{
+  "name": "flickrfeed",
+  "homepage": "https://github.com/phillipclarke29/flickrfeed",
+  "authors": [
+    "philip <philip.clarke@redhood.co.uk>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~1.0.1",
+    "hammerjs": "hammer.js#~2.0.6",
+    "angular": "~1.4.8",
+    "angular-animate": "~1.4.8",
+    "angular-aria": "~1.4.8"
+  }
+}

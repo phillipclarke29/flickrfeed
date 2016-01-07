@@ -1,0 +1,27 @@
+{
+  "name": "flickrfeed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "http-server": "^0.8.5",
+    "karma-cli": "^0.1.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipclarke29/flickrfeed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillipclarke29/flickrfeed/issues"
+  },
+  "homepage": "https://github.com/phillipclarke29/flickrfeed#readme"
+}

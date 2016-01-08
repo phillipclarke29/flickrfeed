@@ -2,9 +2,14 @@
   "name": "flickrfeed",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
+  "main": "app.js",
+  "dependencies": {
+    "http-server": "^0.8.5",
+    "karma-cli": "^0.1.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,13 +23,5 @@
   "bugs": {
     "url": "https://github.com/phillipclarke29/flickrfeed/issues"
   },
-  "homepage": "https://github.com/phillipclarke29/flickrfeed#readme",
-  "devDependencies": {
-    "jasmine-core": "^2.4.1",
-    "karma": "^0.13.18",
-    "karma-chrome-launcher": "^0.2.2",
-    "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.3",
-    "phantomjs": "^1.9.19"
-  }
+  "homepage": "https://github.com/phillipclarke29/flickrfeed#readme"
 }

@@ -29,9 +29,11 @@
           </div>
         </form>
 
-        <md-card ng-repeat="picture in results.photos.photo">
-          <h3> {{picture.author}} </h3>
-          <h4> {{picture.title}} </h4>
+        <md-card ng-repeat="post in results">
+          <h3> {{post.author}} </h3>
+          <h4> {{post.title}} </h4>
+            <h4> {{post.date_taken}} </h4>
+              <h4> {{post.media.m}} </h4>
           <img ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_b.jpg" alt="" class="md-card-image"/>
         </md-card>
 

@@ -9,10 +9,11 @@ angular.module('flickrFeed', ['ngMaterial'])
     $scope.isSearching= false;
 
     $scope.search = function(){
+      var term = $scope.searchTerm.split(" ")
+      var url = 'https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=JSON_CALLBACK' + '&tags="potato,"' + term
 
+      $http.jsonp(url).success(function(data){
 
-      $http.jsonp('https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=JSON_CALLBACK&tags=').success(function(data){
-        console.log(data.items[1])
         $scope.results = data.items;
       });
 

@@ -33,8 +33,7 @@
           <h3> {{post.author}} </h3>
           <h4> {{post.title}} </h4>
             <h4> {{post.date_taken}} </h4>
-              <h4> {{post.media.m}} </h4>
-          <img ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_b.jpg" alt="" class="md-card-image"/>
+          <img ng-src="{{post.media.m}}" alt="" class="md-card-image"/>
         </md-card>
 
       </div>

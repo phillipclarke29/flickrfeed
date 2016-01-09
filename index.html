@@ -11,7 +11,7 @@
   <body ng-app="flickrFeed" ng-controller="ListController" layout="column" layout-align="top-center"/>
     <md-toolbar>
       <div class="md-toolbar-tools">
-        <span class="md-flex">Spud Search - find your dream tatty</span>
+        <span class="md-flex">Spud Search - find your tatty</span>
       </div>
     </md-toolbar>
     <md-content layout="column" layout-align="center center">
@@ -28,14 +28,16 @@
             <md-progress-circular md-mode="indeterminate"><md-progress-circular>
           </div>
         </form>
-
-        <md-card ng-repeat="post in results">
-          <h3> {{post.author}} </h3>
-          <h4> {{post.title}} </h4>
+        <div class="border">
+        </div>
+          <md-list>
+            <md-list-item ng-repeat="post in results" class="md-3-line">
+            <img ng-src="{{post.media.m}}" alt="" class="md-card-image"/>
+            <h3> {{post.author}} </h3>
+            <h4> {{post.title}} </h4>
             <h4> {{post.date_taken}} </h4>
-          <img ng-src="{{post.media.m}}" alt="" class="md-card-image"/>
-        </md-card>
-
+          </md-list-item>
+          </md-list>
       </div>
     </md-content>
 

@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-angular.module('flickrFeed', ['ngMaterial', 'ngRoute'])
+angular.module('flickrFeed', ['ngMaterial', 'angularModalService'])
   .controller('ListController', ['$scope', '$http', function($scope, $http){
 
     $scope.results = [];

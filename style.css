@@ -20,6 +20,16 @@ md-card {
   padding: 10px 30px 25px 20px;
 
 }
+
+md-list{
+  padding-top: 50px;
+}
+
+.md-3-line {
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
 md-card>img {
     width: 30%;
   margin-right: 30px;
@@ -35,4 +45,8 @@ md-title md-toolbar {
 
 .html {
   background-image:
+}
+
+md-toolbar {
+  margin-bottom: 20px;
 }

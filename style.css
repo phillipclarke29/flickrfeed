@@ -22,7 +22,7 @@ md-card {
 }
 
 md-list{
-  padding-top: 50px;
+  margin-top: 10px;
 }
 
 .md-3-line {
@@ -39,8 +39,8 @@ md-title md-toolbar {
   font-size: 90px;
 }*/
 
-.progress {
-
+md-input-container {
+  margin-bottom: 200px;
 }
 
 .html {

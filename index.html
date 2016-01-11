@@ -30,8 +30,9 @@
           <md-list>
             <md-list-item ng-repeat="post in results" class="md-3-line">
             <img ng-src="{{post.media.m}}" alt="" class="md-card-image"/>
+            <a href={{post.link}}>{{ post.title | limitTo : 20 }}</a>
             <h3> {{post.author}} </h3>
-            <h4> {{post.title}} </h4>
+
             <h4> {{post.date_taken}} </h4>
           <md-divider></md-divider>
           </md-list-item>

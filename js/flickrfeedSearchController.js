@@ -1,3 +1,0 @@
-flickrfeedSearch.controller('flickrfeedController', [function() {
-
-}]);

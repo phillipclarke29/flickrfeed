@@ -24,7 +24,8 @@
     "jquery": "~2.1.4",
     "angular-resource": "~1.4.8",
     "angular-route": "~1.4.8",
-    "angular-modal-service": "~0.6.9"
+    "angular-modal-service": "~0.6.9",
+    "ng-morphing-modal": "*"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.8"
